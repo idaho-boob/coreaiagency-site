@@ -294,7 +294,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <a class="big" href="tel:+12082832953">208-283-2953</a>
       <p style="margin-top:22px" class="eyebrow">Where</p><p style="font-size:18px;max-width:30ch">Meridian, Idaho. In person across the Treasure Valley, and by phone and Zoom anywhere in the US.</p>
       <p style="margin-top:22px" class="eyebrow">Email</p>
-      <a class="big" href="/cdn-cgi/l/email-protection#aac3cecbc2c5c9d8cfeacdc7cbc3c684c9c5c7" style="font-size:clamp(20px,2.4vw,28px)"><span class="__cf_email__" data-cfemail="a3cac7c2cbccc0d1c6e3c4cec2cacf8dc0ccce">[email&#160;protected]</span></a>
+      <a class="big" id="em" data-u="idahocre" data-d="gmail.com" href="#contact" style="font-size:clamp(20px,2.4vw,28px)">Email Sam</a>
     </div>
     <form id="cform">
       <label>Your name<input name="name" required autocomplete="name"></label>
@@ -309,7 +309,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 </main>
 <footer><div class="wrap"><span>&copy; <span id="yr"></span> Core AI Agency</span><span>Meridian, Idaho &middot; AI agents, <a class="ftr-link" href="#consulting">AI consulting &amp; one-on-one training</a></span></div></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)};
 $('#yr').textContent=new Date().getFullYear();
@@ -381,5 +381,6 @@ $('#cform').addEventListener('submit',function(e){e.preventDefault();var f=e.tar
  location.href='mailto:idahocre@gmail.com?subject='+encodeURIComponent('Core AI Agency inquiry')+'&body='+encodeURIComponent(body)});
 })();
 </script>
+<script>(function(){var e=document.getElementById("em");if(e){var a=e.dataset.u+"\u0040"+e.dataset.d;e.href="mailto:"+a;e.textContent=a;}})();</script>
 </body>
 </html>
