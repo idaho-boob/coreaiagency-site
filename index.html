@@ -163,6 +163,19 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .agents,.steps,.opts.two{grid-template-columns:1fr}.agent.wide{grid-column:auto}
   .qbox{padding:24px}.log{box-shadow:7px 7px 0 var(--line)}
 }
+
+.sc{position:relative;display:inline-block;margin:18px 0 26px}
+.sc-b{font:600 13px var(--mono);letter-spacing:.02em;background:var(--hi);color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:9px 16px;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+.sc-b i{font-style:normal;display:inline-block;width:18px;height:18px;line-height:15px;text-align:center;border:2px solid var(--ink);border-radius:50%;font-size:14px}
+.sc-p{position:absolute;left:0;top:100%;padding-top:10px;width:min(440px,86vw);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s;z-index:30}
+.sc-in{background:var(--ink);color:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 14px 40px rgba(18,32,43,.35);text-align:left}
+.sc:hover .sc-p,.sc:focus-within .sc-p,.sc.open .sc-p{opacity:1;visibility:visible;transform:none}
+.sc-in .st{display:flex;gap:14px;align-items:flex-start;padding:8px 0}
+.sc-in .st+.st{border-top:1px solid rgba(255,255,255,.18)}
+.sc-in .num{font:800 30px/1 var(--display);color:var(--hi);min-width:84px}
+.sc-in .tx{font:400 14px/1.4 var(--body)}
+.sc-in .tx small{display:block;color:#aeb9c1;font:400 12px var(--mono);margin-top:3px}
+.sc-in a.more{display:inline-block;margin-top:10px;color:var(--hi);font:600 13px var(--mono);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -210,7 +223,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <p class="eyebrow">Who it's for</p>
   <h2>Different business. Same leak.</h2>
   <p class="lead">A customer reaches out, nobody answers fast enough, and they call the next name on the list. Nobody wants a hassle. They want it handled.</p>
-  <div class="fork">
+  <div class="sc"><button type="button" class="sc-b" aria-haspopup="true">Real data: when nobody picks up <i>+</i></button><div class="sc-p"><div class="sc-in"><div class="st"><div class="num">85%</div><div class="tx">of callers hang up on voicemail instead of leaving a message.<small>Quo, 18M+ missed calls, 2026</small></div></div><div class="st"><div class="num">27%</div><div class="tx">of calls to home-services businesses go unanswered.<small>Invoca, 2026</small></div></div><a class="more" href="stats.html">Get the full report &rarr;</a></div></div></div>
+<div class="fork">
     <div class="card"><h3>Contractors</h3>
       <p>You're on a roof or under a sink when the phone rings. The first company to respond usually wins the job. Be that company, and never stop work to do it.</p>
       <ul><li>Roofing</li><li>Plumbing</li><li>Electrical</li><li>HVAC</li><li>Landscaping</li><li>Restoration</li></ul>
@@ -226,6 +240,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <p class="eyebrow">What we build</p>
   <h2>Pick the result you want.</h2>
   <p class="lead">Each result comes from an AI agent set up around your business, your hours and your calendar. Start with one, add more later.</p>
+  <div class="sc"><button type="button" class="sc-b" aria-haspopup="true">Real data: what a missed call costs <i>+</i></button><div class="sc-p"><div class="sc-in"><div class="st"><div class="num">$300+</div><div class="tx">in immediate revenue for a missed home-services call. Often far more in Boise.<small>Invoca and industry estimates</small></div></div><div class="st"><div class="num">38%</div><div class="tx">of dental calls went unanswered across 26 practices. New-patient calls converted at just 25%.<small>Peerlogic, 2026</small></div></div><a class="more" href="stats.html">Get the full report &rarr;</a></div></div></div>
   <div class="agents">
     <article class="agent"><span class="k">24/7 receptionist &amp; appointment setter</span><h3>Every caller gets answered and booked</h3><p>Even at 2 AM. It answers, qualifies the caller, handles common questions and puts the visit on your calendar. Urgent calls ring you.</p><div class="ex">"Roof's leaking." &rarr; booked, owner texted</div></article>
     <article class="agent"><span class="k">Missed-call text-back</span><h3>A missed call stops being a lost customer</h3><p>If you can't pick up, the caller gets a text within seconds and the conversation continues until it's a booking.</p><div class="ex">"Sorry we missed you. What do you need?"</div></article>
@@ -239,6 +254,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section class="alt" id="how"><div class="wrap rv">
   <p class="eyebrow">How it works</p>
   <h2>You talk once. We handle the rest.</h2>
+  <div class="sc"><button type="button" class="sc-b" aria-haspopup="true">Real data: speed wins the job <i>+</i></button><div class="sc-p"><div class="sc-in"><div class="st"><div class="num">21x</div><div class="tx">more likely to qualify a lead when you respond in 5 minutes instead of 30.<small>MIT / InsideSales.com study</small></div></div><div class="st"><div class="num">~40%</div><div class="tx">of homeowners rarely or never use a contractor who missed their first call.<small>Service Direct, 559 homeowners, 2022</small></div></div><a class="more" href="stats.html">Get the full report &rarr;</a></div></div></div>
   <div class="steps">
     <div class="step"><span class="n">STEP 1</span><h3>We talk</h3><p>A short call about your business. That's your whole part.</p></div>
     <div class="step"><span class="n">STEP 2</span><h3>We build</h3><p>Your agent learns your services, hours and calendar, and connects to your phone. We do the setup.</p></div>
@@ -382,5 +398,6 @@ $('#cform').addEventListener('submit',function(e){e.preventDefault();var f=e.tar
 })();
 </script>
 <script>(function(){var e=document.getElementById("em");if(e){var a=e.dataset.u+"\u0040"+e.dataset.d;e.href="mailto:"+a;e.textContent=a;}})();</script>
+<script>document.querySelectorAll(".sc-b").forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();var w=b.parentNode,o=w.classList.contains("open");document.querySelectorAll(".sc.open").forEach(function(x){x.classList.remove("open")});if(!o)w.classList.add("open")})});document.addEventListener("click",function(e){if(!e.target.closest(".sc"))document.querySelectorAll(".sc.open").forEach(function(x){x.classList.remove("open")})});</script>
 </body>
 </html>
